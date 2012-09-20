@@ -4,10 +4,9 @@ use warnings;
 
 use Path::Class;
 use autodie; # die if problem reading or writing a file
+
 my($directory, $filename) = $ARGV[0] =~ m/(.*\/)(.*)$/;
-
 my $dir = dir("$directory");
-
 my $file = $dir->file("$filename");
 
 # openr() returns an IO::File object to read from

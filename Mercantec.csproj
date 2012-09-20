@@ -43,41 +43,6 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".gitattributes" />
-    <Content Include=".gitignore" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include=".git\config" />
-    <None Include=".git\description" />
-    <None Include=".git\FETCH_HEAD" />
-    <None Include=".git\HEAD" />
-    <None Include=".git\hooks\README.sample" />
-    <None Include=".git\index" />
-    <None Include=".git\info\exclude" />
-    <None Include=".git\logs\refs\remotes\origin\master" />
-    <None Include=".git\objects\00\4fd5b76905f136168ed467d983ee167f64ccf4" />
-    <None Include=".git\objects\11\4e2724a8742d6b2d816d9745801c7591ef2577" />
-    <None Include=".git\objects\1d\91739b2bcdd2d616c6e1ce0b3f8915f830c5f2" />
-    <None Include=".git\objects\39\0820c0fda52c8d2ef89a1673d0b40f0255cd48" />
-    <None Include=".git\objects\41\2eeda78dc9de1186c2e0e1526764af82ab3431" />
-    <None Include=".git\objects\43\2b4a1a1c2d8485051dd43f6f52d350e796a9ee" />
-    <None Include=".git\objects\4e\f5c366e1e87d5b277f48dea06102db217b980c" />
-    <None Include=".git\objects\4f\8694596d7eb60e933578798083057b420fd149" />
-    <None Include=".git\objects\54\df49207af4063e302aad062800cd17dd82d2ee" />
-    <None Include=".git\objects\5e\bd21a16d61827ba9ee2b0353fbf6c8c8e88bca" />
-    <None Include=".git\objects\78\5ef068c4cdfdd12d47358a3fdf0afd4fc3711f" />
-    <None Include=".git\objects\8d\538f931c6ff3c033f6b91a8e55f5201145efa2" />
-    <None Include=".git\objects\98\2306020700b5d8faaf2827e4d07c03920f4438" />
-    <None Include=".git\objects\a6\cb2a7a22139fecfb76ca7fb67ee799250cd2d6" />
-    <None Include=".git\objects\bc\a91890e0dc0cc18fa143cf3e5b0038215434df" />
-    <None Include=".git\objects\c0\2fdbb6ff743bd897d11c769a49a057a9117642" />
-    <None Include=".git\objects\d2\0e6d5e20cb51ead4ac0442431f3aa3faf6a943" />
-    <None Include=".git\objects\d4\cd303a96853a2adec08876d23727253007d00a" />
-    <None Include=".git\objects\f2\2e58c1f4ec2994554e7124e39b0293abd0c999" />
-    <None Include=".git\objects\f5\2f3237b83dd59d5ee25bd794968d7fb00fe6d7" />
-    <None Include=".git\objects\f7\4fe7cfe36541b42bbb211d2388cb9b6ee979f2" />
-    <None Include=".git\refs\heads\master" />
-    <None Include=".git\refs\remotes\origin\master" />
     <None Include="h2\perl\nginx_ip_count.pl" />
     <None Include="h2\powershell\mandelbrot.ps1" />
     <None Include="h2\powershell\task4.ps1" />
@@ -85,9 +50,6 @@
     <None Include="h2\powershell\userpass2.ps1" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include=".git\objects\info\" />
-    <Folder Include=".git\objects\pack\" />
-    <Folder Include=".git\refs\tags\" />
     <Folder Include="h1\" />
     <Folder Include="h2\csharp\NewFolder1\" />
     <Folder Include="h2\csharp\NewFolder2\" />

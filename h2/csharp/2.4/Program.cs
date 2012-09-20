@@ -1,34 +1,58 @@
-﻿using System;
+﻿/// <summery>
+/// Import .net classes
+/// </summery>
+
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-public class FetchImage : Form
+namespace _2._4
 {
-
     /// <summary>
-    /// The Fetch Image program      Bishop and Horspool June 2002
-    /// =======================
-    ///
-    /// Displays a picture
-    /// Illustrates simple drawing of images 
+    /// Create new class FetchImage and extend from Form class
     /// </summary>
-
-    Image pic;
-
-    protected override void OnPaint(PaintEventArgs e)
+    public class FetchImage : Form
     {
-        this.Width = 500;
-        this.Height = 400;
-        e.Graphics.DrawImage(pic, 30, 30);
-    }
 
-    public FetchImage()
-    {
-        pic = new Bitmap("photo.jpg");
-    }
+        /// <summary>
+        /// The Fetch Image program      Bishop and Horspool June 2002
+        /// =======================
+        ///
+        /// Displays a picture
+        /// Illustrates simple drawing of images 
+        /// </summary>
 
-    static void Main()
-    {
-        Application.Run(new FetchImage());
+        /// Create object reference, without creating the object
+        Image pic;
+
+        /// <summary>
+        /// Override OnPaint method from Form with our own.
+        /// This is called when a paint event is called.
+        /// </summary>
+        /// <param name="e">Event data is in here</param>
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            /// Set window width to 500 and height to 400
+            this.Width = 500;
+            this.Height = 400;
+            /// Drav image at native size at coords specified by the last two params
+            e.Graphics.DrawImage(pic, 30, 30);
+        }
+        /// <summary>
+        /// constructor, called when class is instantiated
+        /// </summary>
+        public FetchImage()
+        {
+            /// Assign an instance of Bitmap to pic
+            pic = new Bitmap("photo.jpg");
+        }
+        /// <summary>
+        /// Main function, this code is run first
+        /// </summary>
+        static void Main()
+        {
+            ///Begins running a standard application message loop on the current thread.
+            Application.Run(new FetchImage());
+        }
     }
 }

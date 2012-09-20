@@ -32,10 +32,10 @@ namespace _2._4
         /// <param name="e">Event data is in here</param>
         protected override void OnPaint(PaintEventArgs e)
         {
-            /// Set window width to 500 and height to 400
+            /// Set window width to 500 and height to 400 for current instance
             this.Width = 500;
             this.Height = 400;
-            /// Drav image at native size at coords specified by the last two params
+            /// Draw image at native size at coords specified by the last two params
             e.Graphics.DrawImage(pic, 30, 30);
         }
         /// <summary>

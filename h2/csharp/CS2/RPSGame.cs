@@ -10,10 +10,17 @@ namespace CS2
         string[] MoveNames = { "Rock", "Paper", "Scissors" };
         string computersChoice;
         Random r;
+        /// <summary>
+        /// Constructor
+        /// Upon instantiation of the class, create instance of Random as r.
+        /// </summary>
         public RPSGame()
         {
             r = new Random();
         }
+        /// <summary>
+        /// Property
+        /// </summary>
         public string ComputersChoice
         {
             get
@@ -24,7 +31,11 @@ namespace CS2
                 return computersChoice;
             }
         }
-
+        /// <summary>
+        /// Method
+        /// </summary>
+        /// <param name="playersChoice">The choice made by the player</param>
+        /// <returns></returns>
         public string ComparePlays(string playersChoice)
         {
             /// <summary>
@@ -36,6 +47,7 @@ namespace CS2
             /// </summary>
             switch (playersChoice)
             {
+                //if playersChoice is Rock then return Result with defined params
                 case "Rock":
                     //             Player P win     P lose
                     return Result("Rock", "Scissors", "Paper");
@@ -45,11 +57,20 @@ namespace CS2
                 case "Scissors":
                     //             Player      P win    P lose
                     return Result("Scissors", "Paper", "Rock");
+                // If playerChoice is none of the 3 above return null
                 default:
                     return null;
             }
         }
-
+        /// <summary>
+        /// Method
+        /// Compare the parameters with computersChoice property
+        /// Returns string: win, lose or draw.
+        /// </summary>
+        /// <param name="player">Choice of the player</param>
+        /// <param name="Pwin">Losing computer choice</param>
+        /// <param name="Plose">Winning computer choice</param>
+        /// <returns></returns>
         string Result(string player, string Pwin, string Plose)
         {
             if (computersChoice == Pwin)

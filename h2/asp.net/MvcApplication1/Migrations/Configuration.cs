@@ -1,3 +1,5 @@
+using MvcApplication1.Models;
+
 namespace MvcApplication1.Migrations
 {
     using System;
@@ -9,7 +11,7 @@ namespace MvcApplication1.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(MvcApplication1.Models.PersonDb context)
@@ -26,6 +28,11 @@ namespace MvcApplication1.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+            context.MvcApplication1.AddOrUpdate(
+                p => p.cpr,
+                new Person { cpr = 1111111111, name = "Test Testesen" }
+            );
+            context.SaveChanges();
         }
     }
 }

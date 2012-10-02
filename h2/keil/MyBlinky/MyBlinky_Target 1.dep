@@ -1,0 +1,3 @@
+Dependencies for Project 'MyBlinky', Target 'Target 1': (DO NOT MODIFY !)
+F (.\startup_stm32f10x_cl.s)(0x4F58982C)(--cpu Cortex-M3 -g --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x --list "startup_stm32f10x_cl.lst" --xref -o "startup_stm32f10x_cl.o" --depend "startup_stm32f10x_cl.d")
+F (.\MyBlinky.c)(0x506AA1AE)()
